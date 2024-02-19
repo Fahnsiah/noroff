@@ -1,0 +1,62 @@
+// styles.scss
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Mixin
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+// Nesting and Using Mixin
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+  .header__title {
+    font-size: 24px;
+    color: white;
+  }
+  .header__nav {
+    .header__menu {
+      list-style: none;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+          @include button-styles($secondary-color, white);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  padding: 20px;
+  .main-content__title {
+    font-size: 20px;
+    color: $primary-color;
+  }
+  .main-content__text {
+    color: #333;
+  }
+}
+
+.footer {
+  background-color: $secondary-color;
+  padding: 10px 20px;
+  .footer__copyright {
+    color: white;
+    font-size: 14px;
+  }
+}

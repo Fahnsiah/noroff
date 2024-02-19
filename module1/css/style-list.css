@@ -1,0 +1,30 @@
+/* Styling Unordered List */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Styling Ordered List */
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+/* Styling Links */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+}

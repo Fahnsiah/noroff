@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symmetric Encryption</title>
+  </head>
+  <body>
+    <h1>Symmetric Encryption Example</h1>
+    <label>Plain Text</label>
+    <input type="text" id="plaintext" />
+    <br />
+    <br />
+    <button onclick="encryptData()">Encrypt Plain Text</button>
+    <br />
+    <br />
+    <label id="encrypted"></label>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="../js/symmetric.js"></script>
+  </body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symmetric Encryption</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script>
+      // Define the secret key
+      const secretKey = "MySecretKey123";
+
+      function encryptData() {
+        try {
+          const CryptoJS = require("crypto-js");
+          // Define the data to be encrypted
+          const data = document.getElementById("plaintext").value; //"Sensitive information";
+
+          // Encrypt the data using AES encryption
+          encryptedData = CryptoJS.AES.encrypt(data, secretKey).toString();
+          alert(encryptedData);
+          document.getElementById("encrypted").textContent = secretKey;
+        } catch (error) {
+          alert(error);
+        }
+      }
+
+      //   // Define the data to be encrypted
+      //   const data = "Sensitive information";
+
+      //   // Encrypt the data using AES encryption
+      //   const encryptedData = CryptoJS.AES.encrypt(data, secretKey).toString();
+
+      //   // Print the encrypted data
+      //   console.log("Encrypted data:", encryptedData);
+
+      //   // Decrypt the encrypted data
+      //   const decryptedData = CryptoJS.AES.decrypt(
+      //     encryptedData,
+      //     secretKey
+      //   ).toString(CryptoJS.enc.Utf8);
+
+      //   // Print the decrypted data
+      //   console.log("Decrypted data:", decryptedData);
+    </script>
+  </head>
+  <body>
+    <h1>Symmetric Encryption</h1>
+    <label>Plain Text</label>
+    <input type="text" id="plaintext" />
+    <br />
+    <br />
+    <button onclick="encryptData()">Encrypt Plain Text</button>
+    <br />
+    <br />
+    <label id="encrypted"></label>
+  </body>
+</html> -->

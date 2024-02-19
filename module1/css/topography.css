@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff5733;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.quote {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}

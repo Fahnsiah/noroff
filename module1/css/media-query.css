@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  /* Adjustments for smaller screens */
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* Further adjustments for even smaller screens */
+  header {
+    padding: 10px 0;
+  }
+
+  footer {
+    padding: 5px 0;
+  }
+}

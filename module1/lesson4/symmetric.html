@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symmetric Encryption Example</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include CryptoJS AES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </head>
+  <body>
+    <h1>Symmetric Encryption Example</h1>
+
+    <label for="message">Enter message:</label>
+    <input type="text" id="message" />
+    <button id="encryptButton">Encrypt</button>
+    <button id="decryptButton">Decrypt</button>
+
+    <h2>Encrypted Message:</h2>
+    <p id="encryptedMessage"></p>
+
+    <h2>Decrypted Message:</h2>
+    <p id="decryptedMessage"></p>
+
+    <script>
+      $(document).ready(function () {
+        var key = CryptoJS.enc.Utf8.parse("1234567890123456"); // Example key
+
+        $("#encryptButton").click(function () {
+          var message = $("#message").val();
+
+          var encryptedMessage = CryptoJS.AES.encrypt(message, key).toString();
+
+          $("#encryptedMessage").text(encryptedMessage);
+        });
+
+        $("#decryptButton").click(function () {
+          var encryptedMessage = $("#encryptedMessage").text();
+
+          var decryptedMessage = CryptoJS.AES.decrypt(
+            encryptedMessage,
+            key
+          ).toString(CryptoJS.enc.Utf8);
+
+          $("#decryptedMessage").text(decryptedMessage);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+body {
+  font-family: "Roboto", sans-serif; /* Using Google Fonts */
+}
+.icon {
+  color: #007bff; /* Setting color for the icon */
+  font-size: 24px; /* Adjusting the size of the icon */
+  margin-right: 10px; /* Adding margin for spacing */
+}

@@ -1,0 +1,44 @@
+body {
+  background-color: antiquewhite;
+}
+.static {
+  position: static;
+  background-color: #f1c40f;
+  padding: 20px;
+  margin: 10px;
+}
+
+.relative {
+  position: relative;
+  top: 500px;
+  left: 50px;
+  background-color: #e74c3c;
+  padding: 20px;
+  margin: 10px;
+}
+
+.absolute {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: #3498db;
+  padding: 20px;
+  margin: 10px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #2ecc71;
+  padding: 20px;
+  margin: 10px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #9b59b6;
+  padding: 20px;
+  margin: 10px;
+}

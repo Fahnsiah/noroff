@@ -1,0 +1,27 @@
+/* CSS for Flexbox Design */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Background color */
+}
+.container {
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  align-items: center; /* Center items along the cross axis */
+  width: 80%; /* Set width to 80% of the viewport width */
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db; /* Blue background color */
+  margin: 10px; /* Add margin between items */
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+}
