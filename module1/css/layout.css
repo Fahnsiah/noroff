@@ -1,0 +1,17 @@
+.custom-box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#main {
+  background-color: beige;
+  min-height: 500px;
+}
+
+#feeder {
+  background-color: blanchedalmond;
+  min-height: 500px;
+}
