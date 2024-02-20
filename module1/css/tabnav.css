@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(239, 238, 197);
+}
+
+#main {
+  background-color: white;
+  min-height: 500px;
+}
+#sidemenu {
+  background-color: azure;
+  min-height: 500px;
+  font-size: larger;
+}
