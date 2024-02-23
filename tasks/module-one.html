@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module One Task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <div class="main-box">
+      <button
+        class="btn btn-primary button"
+        onclick="return generateRandomNumbers()"
+      >
+        Generate Random Numbers
+      </button>
+      <input
+        id="randomNumbers"
+        type="text"
+        placeholder="rando numbers here"
+        readonly
+        class="form-control"
+      />
+      <label id="instructionLabel"></label>
+      <label id="errorLabel" class="info-label"></label>
+      <input type="number" id="choice" class="form-control" min="0" max="9" />
+      <button
+        class="btn btn-primary button"
+        onclick="return checkResult()"
+        id="resultButton"
+      >
+        Check Result
+      </button>
+      <label id="winningLabel" class="winning-label">
+        <span>Bravo! you have won for yourself</span>
+        <br />
+        <br />
+        <span>$100.00</span>
+      </label>
+
+      <label id="loosingLabel" class="loosing-label">
+        <span>Ops! You almost won.</span>
+        <br />
+        <br />
+        <span>Try again</span>
+      </label>
+    </div>      
+    </div>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
