@@ -1,0 +1,13 @@
+/* styles.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+  background-color: rgb(188, 220, 234);
+}
+
+.text {
+  font-size: 2.5rem;
+  color: #120461;
+}
