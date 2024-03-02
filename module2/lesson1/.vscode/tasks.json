@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "my-event-app",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build - my-event-app",
+      "detail": "react-scripts build"
+    }
+  ]
+}

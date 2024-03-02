@@ -1,0 +1,17 @@
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import MyForm from "./components/MyForm";
+import MyValid from "./components/MyValid";
+import ClearText from "./components/ClearText";
+function App() {
+  return (
+    <div className="container">
+      <Routes>
+        <Route path="/" element={<ClearText />}></Route>
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
