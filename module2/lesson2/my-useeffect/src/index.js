@@ -1,6 +1,3 @@
-
----index.js
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -21,25 +18,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
---app.js
-
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Counter from "./components/Counter";
-
-function App() {
-  return (
-    <div className="my-container" data-clear>
-      <div className="my-page">
-        <Routes>
-          <Route path="/" element={<Counter />} />
-        </Routes>
-      </div>
-    </div>
-  );
-}
-
-export default App;
-
