@@ -1,0 +1,14 @@
+.my-container {
+  display: "flex";
+  align-content: "ceneter";
+  align-items: "center";
+  width: 30%;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.my-page {
+  background-color: #f2daa5;
+  height: 500px;
+  width: 100%;
+  padding: 15px;
+}
