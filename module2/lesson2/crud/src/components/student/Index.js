@@ -2,12 +2,8 @@ import React, { useEffect, useState } from "react";
 import List from "./List";
 import { Button, Container } from "@mui/material";
 import axiosInstance from "../../axios/AxiosInstance";
-import { useNavigate } from "react-router-dom";
-
-const token = localStorage.getItem("access_token");
 
 const Index = () => {
-  const navigate = useNavigate();
   const [data, setData] = useState([{}]);
   const [buttontext, setButtonText] = useState("Add New");
   const [formData, setFormData] = useState({});
@@ -87,10 +83,7 @@ const Index = () => {
         alert(error);
       });
   };
-  const handleLogout = () => {
-    localStorage.removeItem("access_token");
-    navigate("/login");
-  };
+
   const handleButtonText = () => {
     if (createnew) {
       setButtonText("Add New");
@@ -104,9 +97,8 @@ const Index = () => {
     getData();
   }, [data]);
   return (
-    <Container sx={{ backgroundColor: "whitesmoke", height: "100%" }}>
+    <Container>
       <h3>CRUD Operations with Axios</h3>
-      {token && <Button onClick={() => handleLogout()}>Logout</Button>}
 
       <List
         data={data}

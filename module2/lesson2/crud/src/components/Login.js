@@ -14,10 +14,10 @@ const Login = () => {
   return (
     <Box
       sx={{
-        width: "20%",
-        marginInlineStart: "40%",
+        width: "30%",
+        marginInlineStart: "35%",
         backgroundColor: "whitesmoke",
-        marginTop: "250px",
+        marginTop: "75px",
         padding: "25px",
       }}
     >
@@ -33,7 +33,7 @@ const Login = () => {
         />
       </FormControl>
 
-      <FormControl fullWidth>
+      <FormControl fullWidth sx={{ marginTop: "20px" }}>
         <InputLabel htmlFor="username">Password</InputLabel>
         <Input
           id="password"
@@ -43,9 +43,8 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </FormControl>
-      <br />
-      <br />
-      <FormControl fullWidth>
+
+      <FormControl fullWidth sx={{ marginTop: "20px" }}>
         <Button variant="contained" onClick={handleLogin}>
           Login
         </Button>

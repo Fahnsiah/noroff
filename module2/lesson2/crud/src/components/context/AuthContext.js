@@ -32,6 +32,7 @@ export const AuthProvider = ({ children }) => {
     Cookies.remove("access_token");
     Cookies.remove("refresh_token");
     setUser(null);
+    navigate("/login");
   };
 
   return (
