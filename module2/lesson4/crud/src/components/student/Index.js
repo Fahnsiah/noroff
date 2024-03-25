@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import List from "./List";
-import { Button, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import axiosInstance from "../../axios/AxiosInstance";
 
 const Index = () => {

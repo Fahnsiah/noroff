@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const login = async (username, password) => {
-    localStorage.removeItem("access_token");
+    Cookies.remove("access_token");
     await axiosInstance
       .post("/login/", {
         username: username,
@@ -19,12 +19,12 @@ export const AuthProvider = ({ children }) => {
         let resp = response.data;
         Cookies.set("access_token", resp.access);
         Cookies.set("refresh_token", resp.refresh);
-
+        // alert(resp.access);
         setUser(username);
         navigate("/");
       })
       .catch((error) => {
-        alert(error);
+        alert("Login error: " + error);
       });
   };
 
