@@ -6,10 +6,7 @@ const SideNav = () => {
     <div>
       <ul>
         <li>
-          <Link to="/">Dashboard</Link>
-        </li>
-        <li>
-          <Link to="/Admin">Adminstrator</Link>
+          <Link to="/dashboard">Dashboard</Link>
         </li>
         <li>
           <Link to="/student">Student</Link>
