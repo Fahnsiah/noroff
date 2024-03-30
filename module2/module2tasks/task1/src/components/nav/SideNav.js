@@ -12,7 +12,7 @@ const SideNav = () => {
           <Link to="/Admin">Adminstrator</Link>
         </li>
         <li>
-          <Link to="/student">Student</Link>
+          <Link to="/todo">ToDo List</Link>
         </li>
       </ul>
     </div>

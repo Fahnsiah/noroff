@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import SideNav from "./components/nav/SideNav";
 import Dashboard from "./components/Dashboard";
 import Admin from "./components/admin/Admin";
-import Student from "./components/students/Student";
+import ToDo from "./components/todo/ToDo";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/student" element={<Student />} />
+        <Route path="/todo" element={<ToDo />} />
       </Routes>
     </div>
   );
