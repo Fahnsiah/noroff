@@ -10,4 +10,4 @@ for (let i = 1; i <= 600; i++) {
 }
 
 // Output the even numbers
-console.log(evenNumbers);
+alert(JSON.stringify(evenNumbers));

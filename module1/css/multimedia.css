@@ -1,0 +1,21 @@
+.container {
+  width: 30%;
+  margin-left: 35%;
+}
+.video {
+  width: 100%;
+  height: 150px;
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+}
+.audio {
+  width: 100%;
+  height: 75px;
+}
+.iframe {
+  width: 100%;
+  height: 300px;
+}

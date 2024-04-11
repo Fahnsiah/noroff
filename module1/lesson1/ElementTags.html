@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Data</title>
+    <title>Attributes Example</title>
     <!-- External CSS files, meta tags, and other head content -->
   </head>
   <body>
@@ -14,25 +14,10 @@
     <main>
       <!-- simple form that  -->
       <form method="post">
-        <fieldset style="width: 30%">
+        <fieldset>
           <legend>Personal Information</legend>
-
           <label for="fullName">Full Name:</label><br />
           <input type="text" id="fullName" name="fullName" maxlength="150" />
-          <br />
-          <br />
-          <label for="pin">PIN:</label><br />
-          <input type="password" id="pin" name="pin" maxlength="5" />
-          <br />
-          <br />
-          <label for="email">Email:</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            maxlength="75"
-            placeholder="example: me@domain.com"
-          />
           <br />
           <br />
           <label for="gender">Gender:</label><br />
@@ -44,25 +29,7 @@
           <input type="date" id="dateOfBirth" name="dateOfBirth" />
           <br />
           <br />
-          <label for="race">Race:</label><br />
-          <select id="race" name="race">
-            <option value="caucasian">Caucasian</option>
-            <option value="negroid">Negroid</option>
-            <option value="hispanic">Hispanic</option>
-            <option value="others">Others</option>
-          </select>
-          <br />
-          <br />
-          <label for="introduction">Brief Introduction:</label><br />
-          <textarea
-            id="introduction"
-            name="introduction"
-            rows="5"
-            maxlength="250"
-          >
-          </textarea>
-          <br />
-          <br />
+
           <label for="photo">Photo:</label><br />
           <input type="file" id="photo" name="photo" />
           <br />
