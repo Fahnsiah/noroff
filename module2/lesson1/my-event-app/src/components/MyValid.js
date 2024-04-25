@@ -12,12 +12,15 @@ const MyValid = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    
     setErrors({});
     let valError = { ...errors };
     if (!formData.username.trim()) {
       valError.username = "Username is required.";
     }
-
+    // else{
+    //   alert("The username is " + formData.username)
+    // }
     if (!formData.password.trim()) {
       valError.password = "Password is required.";
     }

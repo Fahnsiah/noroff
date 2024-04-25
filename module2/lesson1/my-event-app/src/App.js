@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container">
       <Routes>
-        <Route path="/" element={<ClearText />}></Route>
+        <Route path="/" element={<MyValid />}></Route>
       </Routes>
     </div>
   );

@@ -5,6 +5,7 @@ import Dashboard from "./components/Dashboard";
 import Member from "./components/Member";
 import Footer from "./components/Footer";
 import Contribution from "./components/Contribution";
+import ButtonStyling from "./components/ButtonStyling";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <div className="col-md-10">
           <div className="bg-custom">
             <Routes>
-              <Route path="/" element={<Dashboard />}></Route>
+              <Route path="/" element={<ButtonStyling />}></Route>
               <Route path="/member" element={<Member />}></Route>
               <Route path="/contribution" element={<Contribution />}></Route>
             </Routes>
