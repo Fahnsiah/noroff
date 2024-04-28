@@ -24,4 +24,3 @@ function postData() {
     .catch((error) => console.error("Error saving data:", error));
 }
 
-postData();
