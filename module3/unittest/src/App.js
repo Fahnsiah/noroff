@@ -12,6 +12,4 @@ function App() {
 
 export default App;
 
-npm test
-or
-yarn test
+
